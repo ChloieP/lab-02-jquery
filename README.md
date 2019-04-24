@@ -14,9 +14,9 @@ Estimate of time needed to complete: 1-2 hours
 
 Start time: 8:30am
 
-Finish time: _____
+Finish time: 9:10am
 
-Actual time needed to complete: _____
+Actual time needed to complete: 40 minutes
 
 **Feature #2: Filter images**
 
