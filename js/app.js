@@ -14,9 +14,10 @@ AnimalsWithHorns.prototype.render = function () {
   let animalswithhornsClone = $('#photo-template').clone();
   let $animalswithhornsClone = $(animalswithhornsClone[0].content);
 
-  $animalswithhornsClone.find('h2').text(this.title);
+  // $animalswithhornsClone.find('h2').text(this.title);
   $animalswithhornsClone.find('img').attr('src', this.image_url);
-  $animalswithhornsClone.find('p').text(this.description);
+  $animalswithhornsClone.find('img').attr('data-keyword', this.keyword);
+  // $animalswithhornsClone.find('p').text(this.description);
 
   $animalswithhornsClone.appendTo('main');
 };
@@ -32,8 +33,16 @@ AnimalsWithHorns.readJson = () => {
 };
 
 AnimalsWithHorns.loadAnimalsWithHorns = () => {
-  //LOOP
   AnimalsWithHorns.allAnimalsWithHorns.forEach(animalswithhorns => animalswithhorns.render());
 };
+
+$('select[name="animalswithhorns"]').on('change', function() {
+  let $selection = $(this).val();
+  $('img').hide();
+  $(`img[data-keyword="${$selection}"]`).show();
+});
+
+
+
 
 $(() => AnimalsWithHorns.readJson());

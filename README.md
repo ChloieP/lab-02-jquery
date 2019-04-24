@@ -22,11 +22,11 @@ Actual time needed to complete: 40 minutes
 
 Estimate of time needed to complete: 2-3 hours
 
-Start time: _____
+Start time: 9:20am
 
-Finish time: _____
+Finish time: 10:00am
 
-Actual time needed to complete: _____
+Actual time needed to complete: 40 minutes
 
 **Feature #3: Style the application**
 

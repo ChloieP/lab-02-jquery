@@ -1,0 +1,8 @@
+@import url('./reset.css');
+@import url('./layout.css');
+@import url('./modules.css');
+
+img {
+  width: 250px;
+  height: auto;
+}
